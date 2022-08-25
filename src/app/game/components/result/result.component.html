@@ -1,0 +1,37 @@
+<div id="content">
+  <div id="title">
+    <h1>{{message}}</h1>
+    <img *ngIf="hasWon"
+         src="https://cdn.dribbble.com/users/2983604/screenshots/8140241/media/d0905a1fd24438a96a158b355a72d0b8.gif"
+         alt="confetti"
+         id="confetti"
+    >
+  </div>
+
+  <div id="match-result">
+    <div class="card">
+      <p>You</p>
+      <img [src]="getPlayerSign()">
+    </div>
+    <div class="card">
+      <p>IA</p>
+      <img [src]="getComputerSign()">
+    </div>
+  </div>
+  <div id="buttons">
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="playAgain()"
+    >
+      Play again
+    </button>
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="goToScorePanel()"
+    >
+      Ranking
+    </button>
+  </div>
+</div>

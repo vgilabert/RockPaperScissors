@@ -1,0 +1,10 @@
+<div id="content">
+  <h1>Choose your sign, {{playerName}}</h1>
+  <div id="board">
+    <app-sign
+      *ngFor="let sign of signsList"
+      [image]="sign"
+      (click)="chooseSign(sign)"
+    ></app-sign>
+  </div>
+</div>

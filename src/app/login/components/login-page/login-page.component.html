@@ -1,0 +1,19 @@
+<div id="content">
+  <h1>Rock Paper Scissors!</h1>
+  <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input
+      matInput
+      placeholder="John Doe"
+      [formControl]="name"
+    >
+    <mat-error *ngIf="name.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="play()"
+    [disabled]="name.invalid"
+  >Continue</button>
+</div>
+

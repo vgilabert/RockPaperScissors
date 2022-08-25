@@ -1,0 +1,22 @@
+.card {
+  margin: 1em;
+  display: flex;
+  width: 150px;
+  height: 300px;
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  transition-duration: 0.3s;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card img {
+  display: flex;
+  height: 100px;
+}

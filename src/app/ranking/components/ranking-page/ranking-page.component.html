@@ -1,0 +1,26 @@
+<div id="content">
+  <h1>Ranking</h1>
+  <table>
+    <thead>
+      <tr>
+        <td>Rank</td>
+        <td>Player</td>
+        <td>Score</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let player of playersList; let i = index">
+        <td>{{i+1}}</td>
+        <td>{{player.name}}</td>
+        <td>{{player.score}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="playAgain()"
+  >
+    Play Again
+  </button>
+</div>
