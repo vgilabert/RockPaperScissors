@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 import {FormControl, Validators} from "@angular/forms";
 import {PlayerDataService} from "../../../shared/services/player-data.service";
